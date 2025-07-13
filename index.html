@@ -1,11 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu amor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <title>Aniversário de Namoro</title>
+  <style>
+    .tangerine-regular {
+      font-family: "Tangerine", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .tangerine-bold {
+      font-family: "Tangerine", cursive;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+    section {
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    section::before {
+      content: '❤️';
+      font-size: 3rem;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      animation: float 3s ease-in-out infinite;
+    }
+    section::after {
+      content: '🐰🌸';
+      font-size: 3rem;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      animation: float 4s ease-in-out infinite reverse;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    #intro {
+      background: linear-gradient(to bottom, #007BFF, black);
+      color: white;
+    }
+    #intro h1 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+    }
+    #spotify1 {
+      background: linear-gradient(to bottom, black, orange);
+      color: white;
+    }
+    #conteudo1 {
+      background: linear-gradient(to bottom, orange, white);
+      color: black;
+    }
+    #spotify2 {
+      background: linear-gradient(to bottom, white, green);
+      color: black;
+    }
+    #final {
+      background: linear-gradient(to bottom, green, pink);
+      color: black;
+    }
+    .img-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .img-container img,
+    img.single {
+      width: 450px;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      width: 100%;
+      max-width: 300px;
+      height: 80px;
+      border: none;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      section {
+        padding: 30px 10px;
+      }
+      .img-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <section id="intro">
+    <h1 class="tangerine-bold">FELIZ 3 ANOS DE NAMORO MEU AMOR</h1>
+    <p>Essa data especial chegou e eu não poderia ser mais feliz do que sou agora com você!!!!<br><br>
+    Eu fiz esse site para mostrar meu amor por você com carinho e muita dedicação<br><br>
+    <small>obs: n eh do peixinho</small></p>
+  </section>
+
+  <section id="spotify1">
+    <h2>I GUESS I'M IN LOVE – Clinton Kane</h2>
+    <p>Essa música fazia você lembrar da gente e eu guardei ela na minha playlist<br>
+    como o jeito mais bonito de te dizer o quanto te amo.</p>
+    <iframe id="player1"
+      src="https://open.spotify.com/embed/track/1is8gU4RVcN4J8xItxWoOY?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="conteudo1">
+    <h2>Nesses 3 anos eu descobri o que é amor, qual a sensação de se sentir<br> amado por alguém e o maior prazer da minha vida, que é estar com você!!!</h2>
+    <div class="img-container">
+      <img src="20230301_203958.jpg" alt="Foto 1">
+      <img src="20230326_164900.jpg" alt="Foto 2">
+    </div>
+  </section>
+
+  <section id="spotify2">
+    <h2>Dandelions – Ruth B.<br>E aqui temos a música que me lembra você e diz muito do que eu sinto por você</h2>
+    <iframe id="player2"
+      src="https://open.spotify.com/embed/track/2eAvDnpXP5W0cVtiI0PUxV?si=89f66c72563a4956"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="final">
+    <h2>Eu não consigo imaginar um mundo onde estou sem você, Gabriela você é o amor da minha vida,<br> é a moça que eu sempre quis ter, você é linda, meiga, linda, gentil, e linda , e perfeita, e linda eu muitas outras coisas maravilhosas que<br> te fazem ser a pessoa que eu mais amo nesse mundo, esses 3 anos são nossos primeiros passos de um relacionamento que eu quero que dure pra sempre</h2>
+    <div class="img-container">
+      <img src="20241229_160853.jpg" alt="Foto 3">
+      <img src="20250501_181212.jpg" alt="Foto 4">
+    </div>
+  </section>
+
 </body>
 </html>
